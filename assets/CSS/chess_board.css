@@ -1,0 +1,36 @@
+ * {
+  box-sizing: border-box;
+  height: auto;
+  width: auto;
+  margin:0;
+}
+
+.border {
+  display: inline-block;
+  border: 20px solid rgb(90, 18, 18);
+  width: 844px;
+  height: 844px;
+}
+
+.border1 {
+  border: 2px solid rgb(193, 195, 167);
+}
+
+.white {
+  background-color: bisque;
+  width: 100px;
+  height: 100px;
+}
+.black {
+  background-color: rgb(90, 18, 18);
+  width: 100px;
+  height: 100px;
+}
+
+.row {
+  display: inline-block;
+  margin: 0;
+  height: 100px;
+  width: 100px;
+  margin: 0;
+} 
