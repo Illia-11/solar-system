@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  /* padding: 0; */
+  /* margin: 0; */
+}
+body {
+  background: lightblue;
+}
+
+h1 {
+  color: rgb(200, 0, 200);
+  font-style: italic;
+}
+
+h2 {
+  color: blue;
+  font-size: 48px;
+  background-color: pink;
+  text-align: center;
+}
+
+/* p {
+  color: aquamarine;
+  background-color: grey;
+  font-weight: 700;
+} */
+
+footer {
+  background-color: darkblue;
+  color: rgb(103, 190, 198);
+  font-size: 36px;
+  font-weight: 900;
+  border: 2px solid red;
+  border-style: dotted;
+}
+
+#Solar_system_home {
+  color: orange;
+  font-size: 100px;
+  font-style: italic;
+}
+
+.blue-text {
+  color: aquamarine;
+  background-color: grey;
+  font-weight: 700;
+}
+
+/* nav {
+  font-weight: 600;
+  background-color: aqua;
+  text-transform: capitalize;
+  text-align: center;
+  text-decoration-line: none;
+  display: block;
+} */
+
+.custom-block {
+  background-color: darkblue;
+  color: white;
+  width: 500px;
+  height: 500px;
+  padding: 5px 10px 1px 10px;
+}
+
+
+#margin {
+  margin: 50px 100px 10px 40px;
+}
+
+
+.message-container {
+  display: block;
+  border: 10px solid red;
+  width: 50%;
+  height: 50%;
+  border: 10px solid green;
+  padding: 10px;
+  margin: 10px;
+}
+
+.message-text {
+  color: brown; 
+}
+
+.message-heading {
+  color: brown;
+  background-color: lightblue;
+  text-align: left;
+}
+
+.message-1-margin {
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto; 
+}
+
+.message-2-margin {
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.message-3-margin {
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+

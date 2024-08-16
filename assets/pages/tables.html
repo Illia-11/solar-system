@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/tables.css" />
+    <title>Таблиці</title>
+  </head>
+  <body>
+    <h1>Таблиці</h1>
+    <table>
+      <caption>Планети та їх супутники</caption>
+      <thead>
+      <tr>
+        <th scope="col">Назва планети</tв>
+        <th scope="col">Назва супутника</th>
+        <th scope="col">Період обертання, доба</th>
+        <th scope="col">Автор відкриття</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th rowspan="2" scope="row">Марс</th>
+        <td>Фобос</td>
+        <td>0.32</td>
+        <td rowspan="2">А.Холл</td>
+      </tr>
+      <tr>
+        <td>Деймос</td>
+        <td>1.26</td>
+      </tr>
+      <tr>
+        <th rowspan="3" scope="row">Юпітер</th>
+        <td>Іо</td>
+        <td>1.77</td>
+        <td rowspan="2">Г.Галілей</td>
+      </tr>
+      <tr>
+        <td>Європа</td>
+        <td>3.55</td>
+      </tr>
+      <tr>        
+        <td>Амальтея</td>
+        <td>0.5</td>
+        <td>Е.Бернард</td></tr>
+      <tr>
+        <th rowspan="2" scope="row">Нептун</th>
+        <td>Наяда</td>
+        <td>50</td>
+        <td rowspan="2">"Вояджер-2"</td>
+      </tr>
+      <tr>
+        <td>Протей</td>
+        <td>420</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row">Це для прикладу</th>
+        <td colspan="3">1</td>
+      </tr>
+    </tfoot>
+    </table>
+  </body>
+</html>

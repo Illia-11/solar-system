@@ -2,6 +2,9 @@
   box-sizing: border-box;
   padding: 0; 
   margin: 0;
+}
+
+body {
   font-family: 'Arial';
 }
 
@@ -33,38 +36,30 @@
   text-transform: capitalize;
   border: 1px solid;
   width: 120px;
-  height: 50px;
   padding: 15px;
-  border-radius: 10%;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
 }
 
-section {
+.section {
   text-align: center;
-  font-size: 30px;
-  /* margin: 40px;*/
+  font-size: 17px;
+  padding: 20px;
 }
 
 .brown_border {
   background-color: #926239;
   color: white;
-  padding: 20px;
   margin: 0;
-  font-size: large;
 }
 
 .white_border {
-  font-size: large;
   color: #926239;
-  padding: 20px;
   background-color: white;
-}
-
-article {
-  width: 100vw;
 }
 
 .inline-block {
   display: inline-block;
   width: 33%;
-  height: 100px;
 }

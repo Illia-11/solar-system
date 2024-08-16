@@ -1,0 +1,217 @@
+/* 
+  універсальний селектор вибирає всі елементи
+  специфічність : 0
+*/
+* {
+  box-sizing: border-box;
+  /* padding: 0;
+  margin: 0; */
+}
+
+.block-elem {
+  /* 
+    вказання режиму відображення елементу
+  */
+  display: block;
+  background-color: aqua;
+  font-size: 30px;
+}
+
+.padding {
+  /* 
+    паддінги (внутрішні відступи)
+
+    padding-left - лівий паддінг
+    padding-right - правий
+    padding-top - верхній
+    padding-bottom - нижній
+  */
+
+  /* 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+  */
+  /* padding: 20px; */
+
+  /* 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px; 
+  */
+  padding: 50px 20px;
+
+  /* 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 100px;
+    padding-bottom: 50px; 
+  */
+  padding: 100px 20px 50px;
+
+  /*  padding-left - лівий паддінг
+    padding-right - правий
+    padding-top - верхній
+    padding-bottom - нижній
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 55px; 
+  */
+  padding: 20px 30px 55px 10px;
+}
+
+.border {
+  /* 
+    рамки для коробок
+  */
+  border: 5px solid red;
+
+  /* розміри рамки */
+  border-width: 5px;
+
+  /* border-width: 5px 0 0 0; */
+
+  /* 
+    стиль рамки 
+    border-style: none;
+    solid | hidden | dotted | dashed | double | groove | ridge | inset | outset
+  */
+  border-style: solid;
+
+  /* 
+    колір рамки
+  */
+  border-color: red;
+
+  /*  
+    рамка чисто на одній стороні
+    border-top
+    border-right
+    border-bottom
+    border-left
+  */
+  border-top: 50px double orange;
+
+  border-top-width: 50px;
+  border-top-style: double;
+  border-top-color: orange;
+}
+
+.margin {
+  /* 
+    маржини (зовнішні відступи від елемента)
+    
+    margin-left - лівий маржин
+    margin-right - правий
+    margin-top - верхній
+    margin-bottom - нижній
+  */
+  margin: 50px;
+
+  /* 
+    margin: 50px 20px;
+
+    margin: 50px 30px 80px;
+
+    margin: 50px 10px 15px 7px; 
+  */
+}
+
+.inline-elem {
+  display: inline;
+  font-size: 30px;
+  background-color: lime;
+  /* 
+  у рядкових не працює
+  width: 500px;
+  height: 500px; 
+  */
+}
+
+.inline-block-elem {
+  display: inline-block;
+  background-color: blueviolet;
+  color: white;
+
+  width: 200px;
+  height: 200px;
+  padding: 30px;
+  border: 5px solid blue;
+  /* margin: 20px; */
+}
+
+.fix {
+  font-size: 0;
+}
+
+.elem {
+  display: inline-block;
+  background-color: aquamarine;
+  font-size: 30px;
+  border: 10px solid red;
+  padding: 40px;
+  /* margin: 30px; */
+  /* 
+    відсотки ширини, паддінгів та маржинів беруться від ширини батька
+    рамки не можуть вказуватися відсотками
+  */
+  width: 50%;
+  /* 
+    відсотки висоти беруться від висоти батька тількі якщо батько чітко вказав цю висоту
+    а не розраховує її зі свого контенту
+  */
+  /* height: 50%; */
+}
+
+.custom-block {
+  background-color: brown;
+  color: white;
+  /* 
+    встановлюємо ширину елементу
+  */
+  width: 500px;
+  /* 
+    встановлюємо висоту елементу
+  */
+  height: 500px;
+}
+
+.container {
+  border: 10px solid black;
+}
+
+.message-container {
+  background-color: darkcyan;
+  width: 500px;
+  padding: 10px;
+  border: 10px solid red;
+  margin-bottom: 10px;
+}
+
+.message-heading {
+  color: white;
+}
+
+.message-text {
+  color: white;
+}
+
+.message-1-margin {
+  margin-left: auto;
+  margin-right: auto;
+
+  /* margin: 0 auto; */
+}
+
+.message-2-margin {
+  margin-top: 50px;
+}
+
+.message-3-margin {
+  margin-top: -90px;
+  /* margin-left: -1000px; */
+  margin-bottom: 0;
+}
