@@ -74,3 +74,29 @@ h2 ~ p {
   border: lime;
 }
 /* .nav > h2 + ul {} */
+
+
+
+/* 
+  CSS змінні
+*/
+
+body {
+  /* застосування CSS змінних */
+  color: var(--text-color);
+}
+
+html {
+
+  /* 
+    --назва-змінної: значення_css-властивості;
+  */
+  --text-color: blue;
+  --big-padding: 40px;
+}
+
+.square-img {
+  --size: 700px;
+  width: var(--size);
+  height: var(--size);
+}
