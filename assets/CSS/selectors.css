@@ -86,13 +86,15 @@ body {
   color: var(--text-color);
 }
 
+
+
 /* 
   Псевдокласи
   :root = html
   специфічність - 10
 */
 
-html,
+/* html, */
 :root {
 
   /* 
@@ -106,4 +108,23 @@ html,
   --size: 700px;
   width: var(--size);
   height: var(--size);
+}
+
+.link {
+  text-align: center;
+  display: inline-block;
+  color: blueviolet;
+  padding: 10px 15px;
+  text-decoration: none;
+  border: 1px solid black;
+  width:  120px;
+  background: lightcoral;
+}
+
+/* 
+  Псевдоклас not(X)
+  X - селектор, для якого стилі, які будуть куказані в правилі НЕ мають бути застосовані
+*/
+.link:not(button, div, ul>li, a) {
+  font-style: italic;
 }
