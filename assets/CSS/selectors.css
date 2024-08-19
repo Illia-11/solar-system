@@ -166,3 +166,13 @@ body {
   border-color: lime;
 }
 
+/* 
+  :focus - особливо стилізує елемент, якщо користувач рухається по сайту за допопмогою клавіатури (на ньому є фокус)
+*/
+.link:focus {
+  border-color: aqua;
+}
+
+.article:focus {
+  border-color: yellow;
+}
