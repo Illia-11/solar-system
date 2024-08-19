@@ -157,3 +157,12 @@ body {
   background-color: white;
   color: blue;
 }
+
+/* 
+  :active - особливо стилізує елемент, якщо користувач активував його (затиснув мишу)
+*/
+.link:active {
+  color: red;
+  border-color: lime;
+}
+
