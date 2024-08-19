@@ -137,10 +137,23 @@ body {
 }
 
 /* 
-  visited - стилізація посилань, на які користувач вже переходив
+  :visited - стилізація посилань, на які користувач вже переходив
 */
 .link:visited {
   text-decoration: none;
   color: green;
   background-color: blue;
+}
+
+/* 
+  :hover - особливо стилізує елемент, якщо користувач навів на нього мишею
+*/
+.article:hover {
+  background-color: blue;
+  color: white;
+}
+
+.link:hover {
+  background-color: white;
+  color: blue;
 }
