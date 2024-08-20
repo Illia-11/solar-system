@@ -13,14 +13,14 @@ h1 {
 .outer {
   width: 800px;
   height: 200vh;
-  background-color: aqua;
+  background-color: lime;
   margin: 0 auto;
 }
 
 .inner {
   width: 600px;
   height: 50%;
-  background-color: brown;
+  background-color: black;
   margin: 0 auto;
 }
 
@@ -51,4 +51,22 @@ h1 {
   */
   left: 250px;
   bottom: -50px;
+} 
+
+
+/* Task */
+/* .box:nth-child(2) {
+  position: relative;
+  left: 70px;
+}
+.box:nth-child(1) {
+  position: relative;
+  left: 140px;
+  top: 140px;
+} */
+
+.box:nth-child(3) {
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
