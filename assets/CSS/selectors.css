@@ -204,5 +204,17 @@ body {
 }
 
 /* 
-
+  :nth-child(N) - додає особливі стилі до елементу, якщо той відповідає значенню N
+  N може бути:
+    1. Число
+    2. Вираз вигляду (An + B), де А, В - числа
+    3. Слова even та odd
 */
+/* .li:nth-child(2n+2) {
+  background-color: chocolate;
+  text-align: left;
+} */
+.li:nth-child(even) {
+  background-color: chocolate;
+  text-align: left;
+}
