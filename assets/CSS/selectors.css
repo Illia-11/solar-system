@@ -176,3 +176,33 @@ body {
 .article:focus {
   border-color: yellow;
 }
+
+.li {
+  max-width: 250px;
+  padding: 10px 15px;
+  background-color: lightseagreen;
+  color: white;
+  text-align: center;
+}
+
+/* 
+  :first-child - додає особливі стилі до елементу, якщо той є першою дитиною батьківського елементу
+*/
+.li:first-child,
+.list>:first-child {
+  color: yellow;
+  font-weight: bold;
+}
+
+/* 
+  :last-child - додає особливі стилі до елементу, якщо той є останньою дитиною батьківського елементу
+*/
+.li:last-child,
+.list>:last-child {
+  color: pink;
+  background-color: blue;
+}
+
+/* 
+
+*/
