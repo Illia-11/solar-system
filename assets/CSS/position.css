@@ -34,3 +34,21 @@ h1 {
   border: 5px solid yellow;
 }
 
+/* 
+  position - встановлює режим позиціонування елементу
+  static | relative | absolute | fixed | sticky
+*/
+.box:nth-child(2) {
+  position: relative;
+  /* 
+    керування зсуваом нестатичноспозиціонованого елементу
+    top
+    bottom
+    left
+    right
+    позитивні значення - зсув у протилежну сторону (left зсуває вправа)
+    негативні - зсув у вказану сторону (top угору)
+  */
+  left: 250px;
+  bottom: -50px;
+}
