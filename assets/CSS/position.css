@@ -105,3 +105,9 @@ h1 {
   position: sticky;
   top: 30px;
 }
+
+.box:nth-child(1) {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
