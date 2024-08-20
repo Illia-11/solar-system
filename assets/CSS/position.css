@@ -38,6 +38,48 @@ h1 {
   position - встановлює режим позиціонування елементу
   static | relative | absolute | fixed | sticky
 */
+
+/* Task */
+/* .box:nth-child(2) {
+  position: relative;
+  left: 70px;
+}
+.box:nth-child(1) {
+  position: relative;
+  left: 140px;
+  top: 140px;
+} */
+
+/* .box:nth-child(5) {
+  border-radius: 50px;
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+}
+.box:nth-child(4) {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+} 
+  .box:nth-child(3) {
+  border-radius: 50px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+  .box:nth-child(2) {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+.box:nth-child(1) {
+  border-radius: 50px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+  */
+
 .box:nth-child(2) {
   position: relative;
   /* 
@@ -53,20 +95,13 @@ h1 {
   bottom: -50px;
 } 
 
-
-/* Task */
-/* .box:nth-child(2) {
-  position: relative;
-  left: 70px;
-}
-.box:nth-child(1) {
-  position: relative;
-  left: 140px;
-  top: 140px;
-} */
-
 .box:nth-child(3) {
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 10px;
+  right: 10px;
+}
+
+.box:nth-child(4) {
+  position: sticky;
+  top: 30px;
 }
