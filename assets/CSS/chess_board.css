@@ -1,12 +1,11 @@
  * {
   box-sizing: border-box;
-  height: auto;
-  width: auto;
   margin:0;
 }
 
 .border {
   display: inline-block;
+  font-size: 0;
   border: 20px solid rgb(90, 18, 18);
   width: 844px;
   height: 844px;
@@ -17,19 +16,20 @@
 }
 
 .white {
+  display: inline-block;
   background-color: bisque;
   width: 100px;
   height: 100px;
 }
 .black {
+  display: inline-block;
   background-color: rgb(90, 18, 18);
   width: 100px;
   height: 100px;
 }
 
 .row {
-  display: inline-block;
   margin: 0;
   height: 100px;
-  width: 100px;
+  width: 800px;
 } 
