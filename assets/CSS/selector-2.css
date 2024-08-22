@@ -39,6 +39,13 @@
   text-transform: capitalize;
 }
 
+/* 
+  ::first-line - особливо стилізує перший рядок елементу
+*/
+.article-text::first-line {
+  background-color: aqua;
+}
+
 .li-item::first-letter {
   color: blue;
 }
