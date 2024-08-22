@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.article {
+  width: 600px;
+  padding: 20px;
+  border: 5px solid red;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.article-heading {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.article-text {
+  text-align: justify;
+  margin-bottom: 8px;
+}
+
+.ul {
+  padding-left: 20px;
+}
+
+/* 
+  ::first-letter - особливо стилізує першу літеру блочного елементу, якщо перед ним немає іншого елементу (картинки, таблиці і т.д.)
+*/
+.article-text::first-letter {
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  color: lime;
+  text-transform: capitalize;
+}
+
+.li-item::first-letter {
+  color: blue;
+}
+
