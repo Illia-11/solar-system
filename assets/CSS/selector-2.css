@@ -5,6 +5,7 @@
 }
 
 .article {
+  display: inline-block;
   width: 600px;
   padding: 20px;
   border: 5px solid red;
@@ -39,6 +40,10 @@
   text-transform: capitalize;
 }
 
+.li-item::first-letter {
+  color: blue;
+}
+
 /* 
   ::first-line - особливо стилізує перший рядок елементу
 */
@@ -46,7 +51,9 @@
   background-color: aqua;
 }
 
-.li-item::first-letter {
-  color: blue;
+/* 
+  ::selection - особливі стилі для виділеного елементу
+*/
+.article-text::selection {
+  background-color: rgb(212, 20, 20);
 }
-
