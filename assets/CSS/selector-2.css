@@ -57,3 +57,31 @@
 .article-text::selection {
   background-color: rgb(212, 20, 20);
 }
+
+
+/* 
+  ::before - візуальний псевдоелемент встановлюється першим нащадком у селектора
+  за замовчанням інлайновий 
+  без content ::before не відобразиться
+*/
+.article-heading::before {
+  content: 'st';
+  background-color: brown;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+/* ::after - візуальний псевдоелемент встановлюється останнім нащадком у селектора
+  за замовчанням інлайновий 
+  без content ::before не відобразиться */
+.article-heading::after {
+  /* без content ::before не відобразиться */
+  content: 'st';
+  background-color: lightblue;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  margin-left: 10px;
+}
