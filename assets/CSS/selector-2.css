@@ -14,6 +14,7 @@
 }
 
 .article-heading {
+  position: relative;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
@@ -64,24 +65,25 @@
   за замовчанням інлайновий 
   без content ::before не відобразиться
 */
-.article-heading::before {
-  content: 'st';
-  background-color: brown;
+.article-heading::before,
+.article-heading::after {
+  content: '';
+  position: absolute;
   display: inline-block;
-  width: 50px;
+  width: 24px;
   height: 24px;
-  margin-right: 10px;
+  border-radius: 100%;
 }
 
+
+.article-heading::before {
+  background-color: brown;
+  left: 0;
+}
 /* ::after - візуальний псевдоелемент встановлюється останнім нащадком у селектора
   за замовчанням інлайновий 
-  без content ::before не відобразиться */
+  без content ::after не відобразиться */
 .article-heading::after {
-  /* без content ::before не відобразиться */
-  content: 'st';
   background-color: lightblue;
-  display: inline-block;
-  width: 50px;
-  height: 24px;
-  margin-left: 10px;
+  right: 0;
 }
