@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  padding: 20px;
+  background-color: aquamarine;
+  border-bottom: 2px solid black;
+}
+
+.nav {
+
+}
+
+.nav-list {
+  font-size: 0;
+}
+
+.nav-list-item {
+  display: inline-block;
+}
+
+.nav-list-item + .nav-list-item {
+  margin-left: 5px;
+}
+
+.link {
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 3px solid black;
+  font-size: 16px;
+  background-color: darkcyan;
+  color: white;
+
+  /* 
+  Анімування переходів
+  */
+  transition: all 3s linear 50ms;
+  /* 
+    кого анімую
+  */
+  transition-property: all;
+
+  /* 
+    час анімації
+    рекомендовано час анімації не ставити більше 500мс
+  */
+  transition-duration: 3s;
+
+  /* 
+    керує плавністю анімації
+    linear | ease | ease-in | ease-out | ease-in-out
+  */
+  transition-timing-function: linear;
+
+  /* 
+    затримка перед початком переходу
+  */
+  transition-delay: 50ms;
+}
+
+.link:hover, 
+.link:focus {
+  outline: none;
+  background-color: dodgerblue;
+  border-color: red;
+}
+
+main {
+  min-height: 200vh;
+}
