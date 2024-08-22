@@ -76,3 +76,43 @@
 main {
   min-height: 200vh;
 }
+
+.container {
+  margin: 20px 0;
+  border: 5px solid black
+}
+
+.inner {
+  padding: 20px;
+  width: 300px;
+  background-color: teal;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  transition: width 1.5s;
+  margin: 0 auto;
+}
+
+.container:hover .inner {
+  width: 100%;
+}
+
+.Linear {
+  transition: width 1.5s linear;
+}
+
+.Ease {
+  transition: width 1.5s ease;
+}
+
+.Ease-in {
+  transition: width 1.5 ease-in;
+}
+
+.Ease-out {
+  transition: width 1.5s ease-out;
+}
+
+.Ease-in-out {
+  transition: width 1.5s ease-in-out;
+}
