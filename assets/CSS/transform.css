@@ -98,3 +98,11 @@
   */
   transform: translate3d(0, 0, 200px)
 }
+
+.scale-3d:hover {
+  /* 
+    scale3d(x, y, z)
+    зміни на вісі z видні тільки якщо скористатися іншими властивостями
+  */
+  transform: scale3d(1, 1, -2) translateZ(200px);
+}
