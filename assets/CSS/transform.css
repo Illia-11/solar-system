@@ -115,3 +115,13 @@
   */
   transform: rotate3d(5,5,5,360deg);
 }
+
+.transform-style-3d {
+  /* 
+    змінює поведінку 3Д дфтей і їх батька
+    flat - діти не перетинаються з батьком
+    preserve-3d - діти можуть взєамодіяти з батьком і між собою
+  */
+  transform-style: preserve-3d;
+  background-color: rgba(100, 200, 75, 0.4);
+}
