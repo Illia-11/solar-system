@@ -106,3 +106,12 @@
   */
   transform: scale3d(1, 1, -2) translateZ(200px);
 }
+
+.rotate-3d:hover {
+  /* 
+    rotate3d(x,y,z,deg)
+    x,y,z - коефіціенти для вектору напрямку
+    deg - на скільки елемент повертати
+  */
+  transform: rotate3d(5,5,5,360deg);
+}
