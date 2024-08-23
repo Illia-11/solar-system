@@ -125,3 +125,38 @@
   transform-style: preserve-3d;
   background-color: rgba(100, 200, 75, 0.4);
 }
+
+.card-body {
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+.card-front {
+  z-index: 2;
+  background-color: rgb(255, 69, 0);
+  transform: rotateY(0deg);
+  /* 
+    керує тим чи відображається задня частина елементу
+  */
+  backface-visibility: hidden;
+}
+
+.card-back {
+  background-color: lime;
+  transform: rotateY(180deg);
+}
+
+.transform-style-3d:hover .card-body{
+  transform: rotateY(180deg);
+}
