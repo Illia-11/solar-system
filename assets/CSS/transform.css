@@ -25,7 +25,23 @@
 .translate:hover {
   /* 
     translate - зсуває елемент по осі X та Y
-
+    translateX() - зсуває елемент по осі X
+    translateY() - зсуває елемент по осі Y
   */
   transform: translate(50px, 100px);
+}
+
+.container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  border: 5px solid green;
+}
+
+.translate-center {
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
