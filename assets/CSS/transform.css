@@ -88,3 +88,13 @@
   */
   perspective: 500px;
 }
+
+.translate-3d:hover {
+  /* 
+    translate3d(x, y, z) - пересуває елемент по трьох осях
+    translateX
+    translateY
+    translateZ
+  */
+  transform: translate3d(0, 0, 200px)
+}
