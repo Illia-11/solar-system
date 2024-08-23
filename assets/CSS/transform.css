@@ -74,3 +74,17 @@
   */
   transform: skew(60deg);
 }
+
+.translate-3d-child {
+  /* 
+    вмикає 3д режим для конкретного елементу
+  */
+  transform: perspective(500px);
+}
+
+.perspective-3d-parent {
+  /* 
+    вмикає 3д режим для нащадків конкретного елементу
+  */
+  perspective: 500px;
+}
