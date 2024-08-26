@@ -15,6 +15,17 @@
     display: flex - перетворює елемент на флекс-контейнер
   */
   display: flex;
+
+  /* 
+    flex-direction - змінює напрямок головної осі флек-контейнера
+
+    row - зліва направо (за замовченням)
+    column - зверху вниз
+    row-reverse - зправа наліво
+    column-reverse - знизу вверх
+  */
+  flex-direction: column-reverse;
+
   border: 5px solid orangered;
 }
 
