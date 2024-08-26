@@ -11,6 +11,10 @@
 }
 
 .container {
+  /* 
+    display: flex - перетворює елемент на флекс-контейнер
+  */
+  display: flex;
   border: 5px solid orangered;
 }
 
