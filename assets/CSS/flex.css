@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+}
+
+.container {
+  border: 5px solid orangered;
+}
+
+.flex-item {
+  border: 3px solid black;
+  font-size: 30px;
+  padding: 15px;
+  background-color: dodgerblue;
+  color: white;
+}
