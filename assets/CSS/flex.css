@@ -27,7 +27,7 @@
     row-reverse - зправа наліво
     column-reverse - знизу вверх
   */
-  flex-direction: row;
+  flex-direction: column;
 
   /* 
     justify-content - керує розміщенням елементу вздовж головної вісі
@@ -39,7 +39,7 @@
     space-around - кожен елемент штовхається зліва та зправа на однакову відстань від інших елементів ( x до стінок та 2х між елементами)
     space-between - елементи відштовхуються один від одного, але не від стінок контейнера (х тільки між елементами)
   */
-  justify-content: space-between;
+  justify-content: center;
 
   /* 
     align-items - керує розміщенням флекс-дітей вздовж поперечної вісі
@@ -77,7 +77,7 @@
   /* 
     flex-flow - скорочення властивостей flex-direction та flex-wrap
   */
-  flex-flow: row wrap-reverse;
+  flex-flow: column wrap-reverse;
   border: 5px solid orangered;
 }
 
@@ -117,4 +117,12 @@
     Для конкретної дитини важливіший за align-items
   */
   align-self: flex-start;
+}
+
+.margin-1 {
+  margin: auto;
+}
+
+.margin-2 {
+  
 }
