@@ -12,6 +12,7 @@
 
 .container {
   height: 600px;
+  width: 500px;
 
   /* 
     display: flex - перетворює елемент на флекс-контейнер
@@ -19,14 +20,14 @@
   display: flex;
 
   /* 
-    flex-direction - змінює напрямок головної осі флек-контейнера
+    flex-direction - змінює напрямок головної осі флекс-контейнера
 
     row - зліва направо (за замовчуванням)
     column - зверху вниз
     row-reverse - зправа наліво
     column-reverse - знизу вверх
   */
-  flex-direction: row;
+  flex-direction: column;
 
   /* 
     justify-content - керує розміщенням елементу вздовж головної вісі
@@ -72,7 +73,12 @@
     space-around - елементи в рядку штовхаються на однакову відстань в обидва боки
     space-between - крайні елементи біля стінок, простір рівномірно між рядків
   */
-  align-content: stretch;
+  align-content: flex-start;
+
+  /* 
+    flex-flow - скорочення властивостей flex-direction та flex-wrap
+  */
+  flex-flow: row wrap-reverse;
   border: 5px solid orangered;
 }
 
