@@ -4,6 +4,13 @@
   margin: 0;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
 .header {
   position: sticky;
   top: 0;
@@ -17,7 +24,9 @@
 }
 
 .main {
+  flex-grow: 1;
   padding: 10px;
+  background-color: darkgray;
 }
 
 .article {
@@ -33,6 +42,7 @@
 }
 
 .footer {
+  margin-top: auto;
   text-align: center;
   background-color: green;
   color: white;
