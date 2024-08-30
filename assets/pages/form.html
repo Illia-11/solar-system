@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../CSS/form.css">
-  <title>Document</title>
-</head>
-<body>
-  <h1>Forms</h1>
-  <form>
-    <input placeholder="name" name="firstname">
-    <label for="lastname">Username</label>
-    <input id="lastname" name="lastname">
-    <label>
-      Login
-      <input>
-    </label>
-    <button type="submit">Submit form</button>
-  </form>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/form.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Forms</h1>
+    <form>
+      <input placeholder="name" name="firstname" />
+      <label for="lastname">Username</label>
+      <input id="lastname" name="lastname" />
+      <label>
+        Login
+        <input name="login" type="text" />
+      </label>
+      <label>
+        Mail
+        <input type="email" name="email" />
+      </label>
+      <label>
+        Password
+        <input type="password" name="password" />
+      </label>
+      <label>
+        Number
+        <input type="number" name="number" min="10" max="100" step="5" />
+      </label>
+      <label>
+        Date
+        <input type="date" name="date" />
+      </label>
+      <p>Gender</p>
+      <label> <input type="radio" name="gender" value="male"/> Man </label>
+      <label> <input type="radio" name="gender" value="female"/> Woman </label>
+      <button type="submit">Submit form</button>
+    </form>
+  </body>
 </html>
