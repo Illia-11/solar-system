@@ -8,46 +8,96 @@
   </head>
   <body>
     <h1>Forms</h1>
-    <form>
+    <form class="form">
       <fieldset>
         <legend>Main information</legend>
-        <input placeholder="name" name="firstname" />
-        <label for="lastname">Username</label>
-        <input id="lastname" name="lastname" />
+        <input class="text-input" placeholder="name" name="firstname" />
+        <label class="text-label" for="lastname">Username</label>
+        <input class="text-input" id="lastname" name="lastname" />
       </fieldset>
-      <label>
+      <label class="text-label">
         Login
         <input
+          class="text-input"
           name="login"
           type="text"
           pattern="[a-zA-Z][a-zA-Z0-9#!$]{7,31}"
           required
         />
       </label>
-      <label>
+      <label class="text-label">
         Mail
-        <input type="email" name="email" />
+        <input
+          class="text-input"
+          type="email"
+          name="email"
+          autocomplete="email"
+        />
       </label>
-      <label>
+      <label class="text-label">
         Password
-        <input type="password" name="password" required />
+        <input class="text-input" type="password" name="password" required />
       </label>
-      <label>
+      <label class="text-label">
         Number
-        <input type="number" name="number" min="10" max="100" step="5" />
+        <input
+          class="text-input"
+          type="number"
+          name="number"
+          min="10"
+          max="100"
+          step="5"
+        />
       </label>
-      <label>
+      <label class="text-label">
         Date
-        <input type="date" name="date" />
+        <input class="text-input" type="date" name="date" />
       </label>
       <fieldset>
         <legend>Gender</legend>
-        <label> <input type="radio" name="gender" value="male" /> Man </label>
-        <label> <input type="radio" name="gender" value="female" /> Woman </label>
+        <label class="text-label">
+          <input class="text-input" type="radio" name="gender" value="male" />
+          Man
+        </label>
+        <label class="text-label">
+          <input class="text-input" type="radio" name="gender" value="female" />
+          Woman
+        </label>
       </fieldset>
-      <label>
+      <fieldset>
+        <legend>Customer's address</legend>
+        <label class="text-label">
+          Country
+          <select name="country" id="country-select" required>
+            <optgroup label="Eurasia">
+              <option value="UA">Ukraine</option>
+              <option value="GA">Georgia</option>
+              <option selected value="EN">England</option>
+              <option value="SE">Sweden</option>
+            </optgroup>
+          </select>
+        </label>
+        <label class="text-label">
+          Notes for information
+          <textarea
+            placeholder="some text"
+            name="notes"
+            id="notes"
+            rows="50"
+            cols="50"
+            style="resize: none"
+          >
+nhvufjncewlng
+hfcireowfhnuelrwi
+chfiewhcfnewl
+cjfileshvgcreiw
+        </textarea
+          >
+        </label>
+      </fieldset>
+      <label class="text-label">
         Do you agree with rules?
-        <input type="checkbox" name="agreeed-to-terms" />
+        <input class="text-input" type="checkbox" name="agreeed-to-terms" />
       </label>
       <button type="submit">Submit form</button>
     </form>
