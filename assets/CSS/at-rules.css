@@ -2,3 +2,16 @@
   at-rule - вказує кодування для css файлу
 */
 @charset "UTF-8";
+
+/* 
+  at-rule дозволяє приєднати правила з іншого css файлу 
+  (по факту css аналог <link>)
+  мають йти перед основними правилами файлу
+*/
+@import "./reset.css";
+@import url("./images.css");
+
+
+* {
+  box-sizing: border-box
+}
