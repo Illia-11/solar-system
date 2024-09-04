@@ -9,7 +9,9 @@
   мають йти перед основними правилами файлу
 */
 @import "./reset.css";
-/* @import url("./images.css"); */
+@import url("./font-face.css");
+@import "../media/print.css" print;
+@import "../media/screen.css" screen;
 
 
 * {
@@ -24,7 +26,7 @@ h1 {
   /* 
     вказує назву шрифта або сімейства шрифта, які треба використати
   */
-  font-family: "MagicFont", "Arial", "Verdana", cursive;
+  font-family: "ProtestGuerilla-Regular", "Arial", "Verda", cursive;
 
   font-size: 32px;
   text-align: center;
@@ -36,9 +38,9 @@ h1 {
   font-style: normal;
 }
 
-.container {
+/* .container {
 
-}
+} */
 
 .section {
   padding: 20px;

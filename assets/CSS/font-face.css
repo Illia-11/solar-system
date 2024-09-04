@@ -6,15 +6,16 @@
   /* 
     назва вашого шрифта, по якій ви будете до нього звертатися 
   */
-  font-family: "MagicFont";
+  font-family: "ProtestGuerilla-Regular";
   src: 
   /* браузер буде шукати шрифт з такою назвою на комп'ютері 
     якщо знайде, то не буде його вантажити
   */
-    local("Magic Font"),
-    local("Magic"),
+    local("ProtestGuerilla"),
     /* 
       адреса файлу шрифта, з якої його можна завантажити
     */
-    url("")
+    url("../fonts/ProtestGuerilla/ProtestGuerrilla-Regular.ttf") format("truetype");
+    /* , */
+    /* url() format(); */
 }
