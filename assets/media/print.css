@@ -1,0 +1,10 @@
+.em-heading,
+.rem-heading {
+  font-family: "Sevillana", cursive;
+  font-size: 3rem;
+}
+
+.section {
+  max-width: 500px;
+  margin: 0 auto;
+}
