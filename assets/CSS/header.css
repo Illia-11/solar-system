@@ -29,3 +29,17 @@
   padding: 10px 15px;
   border-radius: 10px;
 }
+
+@media print {
+  /* 
+    все в фігурних дужках додається до основного фалйа, якщо медіазапит валідний
+  */
+  .main-heading {
+    font-size: 5rem;
+    color: blueviolet;
+  }
+
+  .menu {
+    border-color: red;
+  }
+}
