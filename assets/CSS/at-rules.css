@@ -14,7 +14,13 @@
 @import "../media/screen.css" screen;
 @import url("../media/common.css") print, screen;
 @import url("./header.css");
+@import url("./user-card.css");
 
 * {
   box-sizing: border-box
+}
+
+.main {
+  padding: 10px;
+  background-color: lightgray;
 }
