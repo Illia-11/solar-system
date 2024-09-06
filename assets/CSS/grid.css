@@ -41,7 +41,7 @@
     скорочення у вигляді
     grid-column-start / grid-column-end
   */
-  grid-column: 1 / 4;
+  grid-column: 1 / -1;
   /* 
     скорочення у вигляді
     grid-row-start / grid-row-end
@@ -83,7 +83,7 @@
 
 .footer {
   background-color: orange;
-  grid-column-start: 1;
+  grid-column-start: span 3;
   grid-column-end: 4;
   /* 
     вказує з якого вертикального треку починається елемент
