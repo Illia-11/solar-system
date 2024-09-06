@@ -18,10 +18,63 @@
       1fr - коефіцієнт, працює схоже на flex-grow з вільним простором
       auto - від'єдає всі вільне місце по ширині / висоті якщо немає фракції
   */
-  grid-template: 1fr 200px / 1fr 3fr 1fr;
+  grid-template: 200px 1fr 200px / 400px auto 350px;
 }
 
 .grid-child {
-  border: 4px solid black;
+  /* border: 4px solid black; */
   padding: 20px;
+  font: 3.5rem;
+}
+
+.header {
+  background-color: red;
+  /* 
+    вказує з якого треку починається елемент
+  */
+  grid-column-start: 1;
+  /* 
+    вказує на якому треку закінчується елемент
+  */
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.aside {
+  background-color: blue;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.main {
+  background-color: blueviolet;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.nav {
+  background-color: aqua;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.footer {
+  background-color: orange;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  /* 
+    вказує з якого вертикального треку починається елемент
+  */
+  grid-row-start: 3;
+  /* 
+    вказує на якому вертикальному треку закінчується елемент
+  */
+  grid-row-end: 4;
 }
